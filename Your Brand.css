@@ -9,19 +9,50 @@ body {
 
     background: #0f0f0f;
     color: white;
-    margin-left: 20px;
+    margin: 0;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 
 }
 
-header {
+@media (max-width: 768px) {
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .box {
+
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+
+        color: #fff;
+        background: #1a1a1a;
+        border: 1px solid #c08457;
+        padding: 15px;
+        align-items: center;
+
+    }
+
 
 }
 
@@ -34,20 +65,24 @@ header {
 
 }
 
-section {
-    background: #1a1a1a;
-    margin: 20px;
-    padding: 40px;
-    border-radius: 10px;
-}
+@media (max-width: 768px) {
 
-footer {
 
-    margin-left: 50px;
-    background: #1a1a1a;
-    margin: 20px;
-    padding: 40px;
-    border-radius: 10px;
+    section {
+        background: #1a1a1a;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    footer {
+
+        background: #1a1a1a;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 10px;
+
+    }
 
 }
 
@@ -62,12 +97,30 @@ h3 {
 }
 
 
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+}
+
+
 button {
     background: #c08457;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    width: fit-content;
 }
 
 button:hover {
@@ -80,65 +133,47 @@ button:hover {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 20px;
 
 }
 
+
+@media (max-width: 768px) {
+
+    .flex {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+}
+
+
 .text {
 
-    max-width: 500px;
+    width: 100%;
 
 }
 
 img {
 
     width: 100%;
-    max-width: 400px;
     height: auto;
+    border-radius: 10px;
 
 }
 
-.box {
-
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-
-
-    display: flex;
-    gap: 25px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    color: #fff;
-    background: #1a1a1a;
-    border: 1px solid #c08457;
-    padding: 15px;
-    align-items: center;
+@media (max-width: 768px) {
+    img {
+        max-height: 250px;
+        object-fit: cover;
+    }
 }
 
 .box a {
     color: white;
     text-decoration: none;
 }
-
-
-.mainbox {
-
-    display: flex;
-    flex-direction: column;
-
-}
-
-.mainbox a {
-
-    color: #fff;
-    text-decoration: none;
-
-}
-
 
 .contact-box {
     text-align: center;
@@ -163,4 +198,30 @@ img {
 
 .whatsapp-btn:hover {
     background: #1ebe5d;
+}
+
+.mainbox {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mainbox a {
+
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+.menu-card {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu-card {
+        flex-direction: column;
+    }
 }
