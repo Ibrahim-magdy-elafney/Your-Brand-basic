@@ -48,7 +48,6 @@ body {
         color: #fff;
         background: #1a1a1a;
         border: 1px solid #c08457;
-        padding: 15px;
         align-items: center;
 
     }
@@ -189,21 +188,6 @@ img {
 .whatsapp-btn:hover {
     background: #1ebe5d;
 }
-
-.mainbox {
-
-    display: flex;
-    flex-direction: column;
-
-}
-
-.mainbox a {
-
-    color: #fff;
-    text-decoration: none;
-
-}
-
 
 .menu-card {
     display: flex;
