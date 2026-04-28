@@ -139,6 +139,12 @@ button {
     width: fit-content;
 }
 
+@media (max-width: 768px) {
+    button {
+        width: 100%;
+    }
+}
+
 button:hover {
 
     color: #a06b45;
