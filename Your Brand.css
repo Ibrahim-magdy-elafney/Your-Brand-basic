@@ -23,8 +23,10 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 40px;
-        flex-direction: column;
+        margin: 10px;
+        padding: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
         text-align: center;
 
     }
@@ -187,6 +189,12 @@ img {
 .box a {
     color: white;
     text-decoration: none;
+}
+
+.box:hover {
+
+    color: #a06b45;
+
 }
 
 .Mainbox {
